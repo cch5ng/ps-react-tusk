@@ -46,6 +46,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
+    "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
