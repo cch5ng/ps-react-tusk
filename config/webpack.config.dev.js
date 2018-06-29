@@ -165,6 +165,9 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  // comment out css modules because breaks global doc css since it is only used in one comp
+                  //modules: true,
+                  //localIdentName: '[name]_[local]_[hash:base64:5]'                
                 },
               },
               {
